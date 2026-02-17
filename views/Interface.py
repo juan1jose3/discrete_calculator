@@ -3,27 +3,30 @@ class Display:
         print(result)
 
     def main_menu(self):
-        print(self.print_design())
+        self.print_design()
 
         print("Main Menu Options")
         print("1 Set Calculator")
 
-        print(self.print_design())
+        self.print_design()
         
         print()
 
+    def print_message(self,message):
+        print(message)
+    
     def input_handler(self,message):
         return input(message)
 
-    def print_set_population(self):
-        print("Populating Set .... ")
 
     def print_design(self):
-        return "-"*20
+        print("-"*20)
 
     def show_ans(self,ans):
         print("Showing result .....")
+        self.print_design()
         print(ans)
+        self.print_design()
 
                 
 
