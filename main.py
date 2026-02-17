@@ -1,9 +1,10 @@
-from modules.SetModule import SetModule
-import Discrete_calculator
+
+from Calculator import Disc_calculator
 
 def main():
-    setModuleObject = SetModule({1,2,3},{3,4,5})
-    print(setModuleObject.get_union())
+    disc_calculator = Disc_calculator()
+    disc_calculator.interface()
+    
 
 
 if __name__ == "__main__":
